@@ -1,0 +1,24 @@
+# PreChunkGen configuration
+# The content of this file could be changed anytime and may break your server. Use with caution.
+
+# Worlds to pre-generate chunks in
+# Example:
+# worlds:
+#   - world
+#   - world_nether
+worlds: []
+
+# Decides how pre-generate works. There are two types:
+# `spawn` will generate chunks around the world's spawnpoint.
+# For example, if you set the radius to 100, it will generate chunks from -100 to 100 in both X and Z axis.
+# `fixed` will generate chunks around a fixed point. e.g if you set x to 100, z to 100
+# The plugin will generate chunks between x-100 to x+100 and z-100 to z+100.
+gen-type: spawn
+
+# The radius of chunks to generate around the spawnpoint.
+x: 100
+z: 100
+
+# Maximum concurrent generation tasks per world
+# This will allow servers to use less CPU and RAM if you want to run this on production server.
+maximum-concurrent-generation: 4
